@@ -4,6 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script defer="defer" src="src/js/index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Basketball Scoreboard</h1>
+      <div class="time-box">
+        <div id="timer">00:00:00</div>
+        <button class="timer" onclick="startTimer()">Start</button>
+        <button class="timer" onclick="stopTimer()">pause</button>
+        <button class="timer" onclick="restartTimer()">Restart</button>
+      </div>
+      <div class="box">
+        <div class="container">
+          <h2>HOME</h2>
+          <div class="count">
+            <div class="poetsen-one-regular" id="home">0</div>
+          </div>
+          <div>
+            <button onclick="addOne()">+1</button>
+            <button onclick="addTwo()">+2</button>
+            <button onclick="addThree()">+3</button>
+          </div>
+        </div>
+        <div>
+          <h2>GUEST</h2>
+          <div class="count">
+            <div class="poetsen-one-regular" id="guest">0</div>
+          </div>
+          <div>
+            <button onclick="plusOne()">+1</button>
+            <button onclick="plusTwo()">+2</button>
+            <button onclick="plusThree()">+3</button>
+          </div>
+        </div>
+      </div>
+      <p onclick="winner()"></p>
+      <button class="newgame" onclick="newGame()">New Game</button>
+    </main>
+  </body>
 </html>
