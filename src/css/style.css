@@ -3,3 +3,88 @@
   padding: 0.0001px;
   box-sizing: border-box;
 }
+
+body {
+  background-image: url('/src/images/basketball-field.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  margin-top: 1rem;
+  display: grid;
+  flex: row wrap;
+}
+
+.time-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.timer {
+  font-size: 10px;
+  color: #2c1902;
+}
+
+#timer {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 20px;
+  word-break: break-all;
+  color: aliceblue;
+}
+
+.box {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: 'Poetsen One', sans-serif;
+  text-align: center;
+  word-break: break-all;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+
+h2 {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 2rem;
+  word-break: break-all;
+  color: aliceblue;
+}
+
+.count {
+  display: flex;
+  background-color: whitesmoke;
+  height: 4rem;
+  max-width: 7rem;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.poetsen-one-regular {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+}
+
+button {
+  background-color: white;
+  font-family: 'Poetsen One', sans-serif;
+  border: #7b7b7b solid 2px;
+  padding: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newgame {
+  justify-self: center;
+  max-width: max-content;
+}
