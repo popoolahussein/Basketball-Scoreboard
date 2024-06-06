@@ -8,7 +8,6 @@
       name="description"
       content="This is a Basketball Scoreboard designed for precise scorekeeping and time management, ensuring accuracy and reliability."
     />
-
     <title>Basketball Scoreboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/style.css" />
-    <script defer="defer" src="src/js/index.js"></script>
+    <script type="module" src="src/js/index.js"></script>
   </head>
   <body>
     <main>
@@ -25,7 +24,7 @@
       <div class="time-box">
         <div id="timer">00:00:00</div>
         <button class="timer" onclick="startTimer()">Start</button>
-        <button class="timer" onclick="stopTimer()">pause</button>
+        <button class="timer" onclick="stopTimer()">Pause</button>
         <button class="timer" onclick="restartTimer()">Restart</button>
       </div>
       <div class="box">
@@ -40,7 +39,7 @@
             <button onclick="addThree()">+3</button>
           </div>
         </div>
-        <div>
+        <div class="container">
           <h2>GUEST</h2>
           <div class="count">
             <div class="poetsen-one-regular" id="guest">0</div>
@@ -52,7 +51,6 @@
           </div>
         </div>
       </div>
-      <p onclick="winner()"></p>
       <button class="newgame" onclick="newGame()">New Game</button>
     </main>
   </body>
